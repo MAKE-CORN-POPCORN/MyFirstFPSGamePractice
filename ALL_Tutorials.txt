@@ -1,0 +1,51 @@
+'Level Up Game Jam' Recorded Livestream
+Add the Fireballer Pickup (Asset Purchase Required)
+FPS Mod: Create an instant new game level with Snaps
+FPS Mod: Turn your Snaps level into a playable scene
+
+
+FPS Mod: Swap your sounds
+FPS Mod: Mix your own Sci Fi Soundtrack
+All microgames: Importing Microgame add-on assets
+FPS Mod: Build your Customizable Boss (Asset Purchase Required)
+
+
+FPS Mod: Set up your Customizable Boss’ weapons (Asset Purchase Required)
+FPS Mod: Unlock a new Sniper Rifle weapon
+FPS Mod: Add a personalized animated face to your Customizable Boss (Asset Purchase Required)
+FPS Mod: Tweak damage dealt by enemies and attack range
+
+
+FPS Mod: Changing and adding Game Objectives
+FPS Mod: Add a new level to your game flow
+FPS Mod: Set up a new burst rifle weapon
+FPS Mod: Adding post-process effects
+'Your First Game Jam' Recorded Livestream - FPS Microgame
+
+FPS Mod: Power Up Health Pack
+FPS Mod: Add a new Enemy Robot with a hat
+FPS Mod: New Loot Item from Destroying Enemies
+FPS Mod: Weapon Parameters
+FPS Mod: Customize weapon projectiles
+FPS Mod: Set up a new burst rifle weapon
+
+FPS Mod: Build a Level with ProGrids
+FPS Mod: Expand a level
+FPS Mod: Creating the Navigation Mesh
+FPS Mod: Level Art (add props)
+FPS Mod: Add a new level to your game flow
+
+
+FPS Mod: Hit points
+FPS Mod: Player Properties
+FPS Mod: Tune up your game's performance
+All Microgames: Share your game on the web
+FPS Mod: Changing and adding Game Objectives
+
+FPS Mod: CCTV live in-game camera feed
+FPS Mod: Dual-weapon wielding
+FPS Mod: Healing ally robots
+
+FPS Mod: Name your game
+FPS Mod: Customize the sky
+FPS Mod: A splash of color
