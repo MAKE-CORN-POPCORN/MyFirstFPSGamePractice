@@ -3324,7 +3324,7 @@ PrefabInstance:
     - target: {fileID: 2015434656898269656, guid: 6c9a4a1412f19134f88f3ad7f68471b3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 433.7
+      value: 478
       objectReference: {fileID: 0}
     - target: {fileID: 2015434656898269656, guid: 6c9a4a1412f19134f88f3ad7f68471b3,
         type: 3}
@@ -3376,6 +3376,16 @@ PrefabInstance:
         type: 3}
       propertyPath: summonAmount
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370966072896210225, guid: 6c9a4a1412f19134f88f3ad7f68471b3,
+        type: 3}
+      propertyPath: MaxHealth
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370966072896210225, guid: 6c9a4a1412f19134f88f3ad7f68471b3,
+        type: 3}
+      propertyPath: CriticalHealthRatio
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9087143436424816424, guid: 6c9a4a1412f19134f88f3ad7f68471b3,
         type: 3}

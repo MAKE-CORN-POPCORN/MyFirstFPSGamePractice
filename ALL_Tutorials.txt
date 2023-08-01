@@ -1,3 +1,5 @@
+https://learn.unity.com/project/fps-template
+
 'Level Up Game Jam' Recorded Livestream
 Add the Fireballer Pickup (Asset Purchase Required)
 FPS Mod: Create an instant new game level with Snaps
