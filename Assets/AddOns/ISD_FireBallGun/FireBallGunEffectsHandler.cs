@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Unity.FPS.Addons
 {
     [RequireComponent(typeof(WeaponController))]
-    public class RifleEffectsHandler : MonoBehaviour
+    public class FireBallGunEffectsHandler : MonoBehaviour
     {
         [Tooltip("List of Transforms representing the small parts of the rifle after a shot")]
         public Transform[] parts;
@@ -27,7 +27,8 @@ namespace Unity.FPS.Addons
         void Start()
         {
             m_Weapon = GetComponent<WeaponController>();
-            DebugUtility.HandleErrorIfNullGetComponent<WeaponController, WeaponFuelCellHandler>(m_Weapon, this, gameObject);
+            DebugUtility.HandleErrorIfNullGetComponent<WeaponController, WeaponFuelCellHandler>(m_Weapon, this,
+                gameObject);
 
             for (int i = 0; i < parts.Length; i++)
             {

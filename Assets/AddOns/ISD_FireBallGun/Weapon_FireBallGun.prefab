@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 555188489432107117}
   - component: {fileID: 8090847488450120274}
   m_Layer: 10
-  m_Name: Weapon_SniperRifle
+  m_Name: Weapon_FireBallGun
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad90ba0b1477764da373f5ec01a8cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponName: SniperRifle
+  WeaponName: FireBallGun
   WeaponIcon: {fileID: 21300000, guid: 48a6602ef3eb479479b7e40c5e28a7f3, type: 3}
   CrosshairDataDefault:
     CrosshairSprite: {fileID: 21300000, guid: 7ed7349a85eb4404fbbe8ec2e8a11c2d, type: 3}
@@ -124,13 +124,13 @@ MonoBehaviour:
   WeaponRoot: {fileID: 1505447205160222267}
   WeaponMuzzle: {fileID: 8334323006752503713}
   ShootType: 0
-  ProjectilePrefab: {fileID: 8924682559891268397, guid: 6bcd9b6efe0196243acd73cafc63f5ef,
+  ProjectilePrefab: {fileID: 8924682559891268397, guid: ab53a58f6f7975c499796d68f85ebacf,
     type: 3}
   DelayBetweenShots: 0
   BulletSpreadAngle: 0
   BulletsPerShot: 1
   RecoilForce: 2
-  AimZoomRatio: 0.2
+  AimZoomRatio: 0.3
   AimOffset: {x: -0.05, y: 0.075, z: 0}
   AutomaticReload: 1
   HasPhysicalBullets: 0
@@ -139,12 +139,12 @@ MonoBehaviour:
   EjectionPort: {fileID: 0}
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
-  AmmoReloadRate: 0.4
+  AmmoReloadRate: 1
   AmmoReloadDelay: 0
   MaxAmmo: 1
   AutomaticReleaseOnCharged: 0
   MaxChargeDuration: 2
-  AmmoUsedOnStartCharge: 1
+  AmmoUsedOnStartCharge: 5
   AmmoUsageRateWhileCharging: 1
   WeaponAnimator: {fileID: 0}
   MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 4f5d4e5eaa0e5104791549cea3dc3f23,
@@ -182,31 +182,22 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.25
-      inSlope: 5.083701
-      outSlope: 5.083701
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.30674574
-    - serializedVersion: 3
-      time: 0.06
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
       value: 0
       inSlope: 0
       outSlope: 0
-      tangentMode: 136
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -262,18 +253,18 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: -0
-      outSlope: -0
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.25833333
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -414,6 +405,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 825220459589154871}
     m_Modifications:
+    - target: {fileID: 3535881425241086519, guid: 21c8bd050f24da54285f8a3987ee6253,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5338991494728519494, guid: 21c8bd050f24da54285f8a3987ee6253,
         type: 3}
       propertyPath: m_RootOrder

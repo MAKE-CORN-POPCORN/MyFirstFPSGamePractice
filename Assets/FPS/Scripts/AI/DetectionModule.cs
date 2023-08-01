@@ -22,6 +22,9 @@ namespace Unity.FPS.AI
         [Tooltip("Optional animator for OnShoot animations")]
         public Animator Animator;
 
+        // [Tooltip("Variation")] // Variation 0 = Normal, 1 = Sommoner
+        // public int BotVariation;
+
         public UnityAction onDetectedTarget;
         public UnityAction onLostTarget;
 
@@ -36,6 +39,7 @@ namespace Unity.FPS.AI
 
         const string k_AnimAttackParameter = "Attack";
         const string k_AnimOnDamagedParameter = "OnDamaged";
+        const string k_AnimOnSummonParameter = "Summoning";
 
         protected virtual void Start()
         {

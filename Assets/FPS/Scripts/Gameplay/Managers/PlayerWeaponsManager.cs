@@ -425,10 +425,10 @@ namespace Unity.FPS.Gameplay
         }
 
         // Adds a weapon to our inventory
-        public bool AddWeapon(WeaponController weaponPrefab)
+        public bool AddWeapon(WeaponController weaponPrefab, bool GetMulti = false)
         {
             // if we already hold this weapon type (a weapon coming from the same source prefab), don't add the weapon
-            if (HasWeapon(weaponPrefab) != null)
+            if (HasWeapon(weaponPrefab) != null && !GetMulti)
             {
                 return false;
             }

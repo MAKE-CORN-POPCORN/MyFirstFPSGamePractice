@@ -22,6 +22,12 @@ namespace Unity.FPS.AI
             }
         }
 
+        [Header("Variation")]
+        [Tooltip("This Mob May Leave It's Body After Death")]
+        public bool LeaveBody = false;
+        [Tooltip("This Mob Can Revive Again")]
+        public bool DoRevive = false;
+
         [Header("Parameters")]
         [Tooltip("The Y height at which the enemy will be automatically killed (if it falls off of the level)")]
         public float SelfDestructYHeight = -20f;
@@ -104,6 +110,7 @@ namespace Unity.FPS.AI
         public NavMeshAgent NavMeshAgent { get; private set; }
         public DetectionModule DetectionModule { get; private set; }
 
+        bool CanRevive;
         int m_PathDestinationNodeIndex;
         EnemyManager m_EnemyManager;
         ActorsManager m_ActorsManager;
@@ -120,6 +127,8 @@ namespace Unity.FPS.AI
 
         void Start()
         {
+            CanRevive = DoRevive;
+
             m_EnemyManager = FindObjectOfType<EnemyManager>();
             DebugUtility.HandleErrorIfNullFindObject<EnemyManager, EnemyController>(m_EnemyManager, this);
 
@@ -374,6 +383,16 @@ namespace Unity.FPS.AI
 
             // this will call the OnDestroy function
             Destroy(gameObject, DeathDuration);
+
+            //if (CanRevive)
+            //{
+            //    Instantiate(this, transform.position, Quaternion.identity);
+            //}
+            //if (LeaveBody)
+            //{
+            //    Instantiate(gameObject, transform.position, Quaternion.identity);
+            //}
+
         }
 
         void OnDrawGizmosSelected()

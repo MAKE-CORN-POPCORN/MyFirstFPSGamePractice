@@ -77,7 +77,7 @@ namespace Unity.FPS.Game
                 return;
 
             // call OnDie action
-            if (CurrentHealth <= 0f)
+            if ((int)(CurrentHealth) <= 0)
             {
                 m_IsDead = true;
                 OnDie?.Invoke();

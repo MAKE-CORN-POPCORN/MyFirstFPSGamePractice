@@ -5,6 +5,8 @@ namespace Unity.FPS.Gameplay
 {
     public class WeaponPickup : Pickup
     {
+        [Tooltip("Can The Weapon Be Added More Tham Once")]
+        public bool GetMulti = false;
         [Tooltip("The prefab for the weapon that will be added to the player on pickup")]
         public WeaponController WeaponPrefab;
 
@@ -25,7 +27,7 @@ namespace Unity.FPS.Gameplay
             PlayerWeaponsManager playerWeaponsManager = byPlayer.GetComponent<PlayerWeaponsManager>();
             if (playerWeaponsManager)
             {
-                if (playerWeaponsManager.AddWeapon(WeaponPrefab))
+                if (playerWeaponsManager.AddWeapon(WeaponPrefab, GetMulti))
                 {
                     // Handle auto-switching to weapon if no weapons currently
                     if (playerWeaponsManager.GetActiveWeapon() == null)

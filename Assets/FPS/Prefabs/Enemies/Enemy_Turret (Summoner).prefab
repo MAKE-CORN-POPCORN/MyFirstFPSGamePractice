@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 1345943282138014167}
   - component: {fileID: 3444686158330356048}
   m_Layer: 0
-  m_Name: Enemy_Turret
+  m_Name: Enemy_Turret (Summoner)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de939d976a5bb0419ccd8dbd0b6836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeaveBody: 0
+  DoRevive: 0
   SelfDestructYHeight: -20
   PathReachingRadius: 0
   OrientationSpeed: 10
@@ -221,8 +223,8 @@ MonoBehaviour:
   SwapToNextWeapon: 0
   DelayAfterWeaponSwap: 0
   EyeColorMaterial: {fileID: 2100000, guid: 778fbfe9a7e4a96418b9312dbfc4d67c, type: 2}
-  DefaultEyeColor: {r: 23.849056, g: 7.292185, b: 0, a: 1}
-  AttackEyeColor: {r: 32, g: 1.4610044, b: 0, a: 1}
+  DefaultEyeColor: {r: 6.9087577, g: 6.300667, b: 6.028869, a: 1}
+  AttackEyeColor: {r: 0, g: 3.6063383, b: 31.999996, a: 1}
   BodyMaterial: {fileID: 2100000, guid: bc52f7878b77b454787353158253aa1a, type: 2}
   OnHitBodyGradient:
     serializedVersion: 2
@@ -275,8 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 400
-  CriticalHealthRatio: 0.3
+  MaxHealth: 2000
+  CriticalHealthRatio: 0.2
 --- !u!114 &3464315327790461765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +307,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cb5371dba09ee46806cbe0c2aa2c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SummomVerion: 1
+  canSummon: 0
+  SummonPrefab: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
+    type: 3}
+  summonAmount: 10
   TurretPivot: {fileID: 7886326314632062837}
   TurretAimPoint: {fileID: 6571005840976436832}
   Animator: {fileID: 7886326314639247517}
